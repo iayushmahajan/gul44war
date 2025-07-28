@@ -1,0 +1,219 @@
+    warning: variable "adds" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 35 │   def downstream({:add, element}, %{adds: adds}) do
+    │                                           ~~~~
+    │
+    └─ lib/behaviour_set_aw_op.ex:35:43: Set_AW_OP.downstream/2
+
+    warning: variable "removes" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 51 │   def update({:add, element, tag}, %{adds: adds, removes: removes} = state) do
+    │                                                           ~~~~~~~
+    │
+    └─ lib/behaviour_set_aw_op.ex:51:59: Set_AW_OP.update/2
+
+    warning: variable "adds" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 59 │   def update({:remove, element, tag}, %{adds: adds, removes: removes} = state) do
+    │                                               ~~~~
+    │
+    └─ lib/behaviour_set_aw_op.ex:59:47: Set_AW_OP.update/2
+
+    warning: variable "add" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 71 │   def require_state_downstream({add, _}) do true end
+    │                                 ~~~
+    │
+    └─ lib/behaviour_set_aw_op.ex:71:33: Set_AW_OP.require_state_downstream/1
+
+    warning: variable "add_all" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 72 │   def require_state_downstream({add_all, _}) do true end
+    │                                 ~~~~~~~
+    │
+    └─ lib/behaviour_set_aw_op.ex:72:33: Set_AW_OP.require_state_downstream/1
+
+    warning: variable "remove" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 73 │   def require_state_downstream({remove, _}) do true end
+    │                                 ~~~~~~
+    │
+    └─ lib/behaviour_set_aw_op.ex:73:33: Set_AW_OP.require_state_downstream/1
+
+    warning: variable "remove_all" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 74 │   def require_state_downstream({remove_all, _}) do true end
+    │                                 ~~~~~~~~~~
+    │
+    └─ lib/behaviour_set_aw_op.ex:74:33: Set_AW_OP.require_state_downstream/1
+
+    warning: variable "reset" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 75 │   def require_state_downstream({reset, {}}) do true end
+    │                                 ~~~~~
+    │
+    └─ lib/behaviour_set_aw_op.ex:75:33: Set_AW_OP.require_state_downstream/1
+
+    warning: variable "adds" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 27 │   def downstream({:add, element}, {adds, removes}) do
+    │                                    ~~~~
+    │
+    └─ lib/behaviour_tpset_expanded.ex:27:36: Behaviour_TPSetExpanded.downstream/2
+
+    warning: variable "args" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 10 │   def init(args) do
+    │            ~~~~
+    │
+    └─ lib/minidote_server.ex:10:12: Minidote.Server.init/1
+
+    warning: variable "bucket" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 32 │         {id, module, bucket} = key
+    │                      ~
+    │
+    └─ lib/minidote_server.ex:32:22: Minidote.Server.handle_call/3
+
+    warning: variable "id" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 32 │         {id, module, bucket} = key
+    │          ~
+    │
+    └─ lib/minidote_server.ex:32:10: Minidote.Server.handle_call/3
+
+    warning: variable "clock" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 45 │ def handle_call({:read_objects, keys, clock}, _from, state) do
+    │                                       ~~~~~
+    │
+    └─ lib/minidote_server.ex:45:39: Minidote.Server.handle_call/3
+
+    warning: variable "bucket" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 67 │     {id, module, bucket} = key
+    │                  ~
+    │
+    └─ lib/minidote_server.ex:67:18: Minidote.Server.handle_call/3
+
+    warning: variable "crdt_module" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 69 │     {crdt_module, crdt_state} =
+    │      ~
+    │
+    └─ lib/minidote_server.ex:69:6: Minidote.Server.handle_call/3
+
+    warning: variable "id" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 67 │     {id, module, bucket} = key
+    │      ~
+    │
+    └─ lib/minidote_server.ex:67:6: Minidote.Server.handle_call/3
+
+     warning: variable "clock" is unused (if the variable is not meant to be used, prefix it with an underscore)
+     │
+ 109 │ def handle_call({:update_objects, updates, clock}, _from, state) do
+     │                                            ~~~~~
+     │
+     └─ lib/minidote_server.ex:109:44: Minidote.Server.handle_call/3
+
+     warning: variable "crdt_module" is unused (if the variable is not meant to be used, prefix it with an underscore)
+     │
+ 154 │   {crdt_module, crdt_state} =
+     │    ~~~~~~~~~~~
+     │
+     └─ lib/minidote_server.ex:154:4: Minidote.Server.handle_info/2
+
+    warning: :slave.start_link/3 is deprecated. It will be removed in OTP 29. Use the 'peer' module instead
+    │
+ 18 │       :slave.start_link(
+    │              ~
+    │
+    └─ lib/test_setup.ex:18:14: TestSetup.start_node/1
+
+    warning: :slave.stop/1 is deprecated. It will be removed in OTP 29. Use the 'peer' module instead
+    │
+ 60 │     :slave.stop(node)
+    │            ~
+    │
+    └─ lib/test_setup.ex:60:12: TestSetup.stop_node/1
+
+    warning: :slave.stop/1 is deprecated. It will be removed in OTP 29. Use the 'peer' module instead
+    │
+ 65 │     Enum.each(nodes, &:slave.stop/1)
+    │                              ~
+    │
+    └─ lib/test_setup.ex:65:30: TestSetup.stop_nodes/1
+
+    warning: :meck.new/2 is undefined (module :meck is not available or is yet to be defined)
+    │
+ 79 │     :ok = :meck.new(:"Elixir.LinkLayer", [:passthrough])
+    │                 ~
+    │
+    └─ lib/test_setup.ex:79:17: TestSetup.add_delay_r/3
+
+    warning: :meck.expect/3 is undefined (module :meck is not available or is yet to be defined)
+    │
+ 80 │     :ok = :meck.expect(:"Elixir.LinkLayer", :send, fn(ll, data, receiver) ->
+    │                 ~
+    │
+    └─ lib/test_setup.ex:80:17: TestSetup.add_delay_r/3
+
+    warning: :meck_util.original_name/1 is undefined (module :meck_util is not available or is yet to be defined)
+    │
+ 97 │         apply(:meck_util.original_name(:"Elixir.LinkLayer"), :send, [ll, data, receiver])
+    │                          ~
+    │
+    └─ lib/test_setup.ex:97:26: TestSetup.add_delay_r/3
+
+
+15:32:39.506 [notice] nonode@nohost: Starting minidote application
+
+15:32:39.539 [notice] Connecting nonode@nohost to other nodes: []
+
+15:32:39.539 [notice] Connected to all nodes
+
+15:32:39.541 [notice] Starting distributed setup
+
+15:32:39.563 [notice] Finished distributed setup
+Running ExUnit with seed: 569555, max_cases: 16
+
+9
+.
+15:32:39.810 [info] [master@127.0.0.1] Received CRDT update from :nonode@nohost
+
+15:32:39.810 [info] [master@127.0.0.1] Received CRDT update from :nonode@nohost
+
+15:32:39.813 [info] [master@127.0.0.1] Received CRDT update from :nonode@nohost
+.
+15:32:39.817 [info] [master@127.0.0.1] Received CRDT update from :nonode@nohost
+
+15:32:39.817 [info] [master@127.0.0.1] Received CRDT update from :nonode@nohost
+
+15:32:39.817 [info] [master@127.0.0.1] Received CRDT update from :nonode@nohost
+
+15:32:39.817 [info] [master@127.0.0.1] Received CRDT update from :nonode@nohost
+.
+15:32:39.818 [info] [master@127.0.0.1] Received CRDT update from :nonode@nohost
+
+15:32:39.829 [info] [master@127.0.0.1] Received CRDT update from :nonode@nohost
+
+15:32:39.830 [info] [master@127.0.0.1] Received CRDT update from :nonode@nohost
+
+15:32:39.830 [info] [master@127.0.0.1] Received CRDT update from :nonode@nohost
+
+15:32:39.839 [info] [master@127.0.0.1] Received CRDT update from :nonode@nohost
+
+15:32:39.840 [info] [master@127.0.0.1] Received CRDT update from :nonode@nohost
+
+
+  1) test increments and reads counter using Minidote API (MinidoteTest)
+     test/minidote_test.exs:17
+     ** (MatchError) no match of right hand side value: {:ok, [{{"my_counter", Counter_PN_OB, "test_bucket"}, 10}], %{nonode@nohost: 6}}
+     code: {:ok, [{^key, 5}], clock2} =
+     stacktrace:
+       test/minidote_test.exs:25: (test)
+
+..
+Finished in 0.1 seconds (0.00s async, 0.1s sync)
+6 tests, 1 failure
